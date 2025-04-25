@@ -25,14 +25,14 @@ const crearEvento = async(req, res = response ) => {
 
         res.json({
             ok: true,
-            msg: eventoGuardado,
+            evento: eventoGuardado,
         });
         
     } catch ( error ) {
         console.log(error);
         res.status(500).json({
             ok: false,
-            msg: 'Hable con el administrador'
+            evento: 'Hable con el administrador'
         });
     }
 
